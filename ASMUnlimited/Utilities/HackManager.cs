@@ -6,7 +6,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace ASMUnlimited
+namespace ASMUnlimited.Utilities
 {
     /// <summary>
     /// Automatically changes the rectangle's color

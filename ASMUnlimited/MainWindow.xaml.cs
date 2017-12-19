@@ -23,7 +23,6 @@ namespace ASMUnlimited
             InitializeComponent();
 
             _unlimitedManager = new HackManager(cwUnlimited);
-
             _mem = new MemManager(Process.GetProcesses().FirstOrDefault(m => m.ProcessName.Contains("ASAMU")));
 
             _unlimitedManager.ActivationAction = () =>
