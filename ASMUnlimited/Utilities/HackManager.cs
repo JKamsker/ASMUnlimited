@@ -62,7 +62,7 @@ namespace ASMUnlimited.Utilities
                 if (_active != value)
                 {
                     _active = value;
-                    _statusRect.Fill = GetColor(value);
+                    _statusRect.Fill = GetColor();
                 }
             }
         }
@@ -106,9 +106,10 @@ namespace ASMUnlimited.Utilities
         /// </summary>
         /// <param name="status"></param>
         /// <returns></returns>
-        private Brush GetColor(bool status)
+        private Brush GetColor(bool? status = null)
         {
-            if (status)
+            var rStatus = status ?? _active;
+            if (rStatus)
             {
                 return new SolidColorBrush(Color.FromRgb(0, 255, 0));
             }
